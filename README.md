@@ -1,98 +1,91 @@
 # ⚙️ Tech Environment Setup – Mini Project
 
-This project is the first practical task in the Darey.io DevOps learning path. It focuses on preparing and configuring a personal development environment using essential tools and accounts required throughout the DevOps program.
+This mini-project is the first hands-on task in the Darey.io DevOps learning path. The objective is to prepare a functional development environment using essential DevOps tools.
 
 ---
 
 ## 🎯 Objective
 
-To install, configure, and validate a working DevOps environment that includes:
+Set up and validate the following tools and services:
 - Git
 - Visual Studio Code (VS Code)
-- Ubuntu/Linux environment (via AWS EC2, Vagrant, or VirtualBox)
+- Ubuntu/Linux (EC2 or local VM)
 - GitHub account
-- AWS account
-- SSH setup
+- AWS EC2 instance
 
 ---
 
 ## 🧰 Tools Installed
 
-| Tool           | Purpose                              |
-|----------------|--------------------------------------|
-| **Git**        | Version control system               |
-| **VS Code**    | Code editor for development          |
-| **Ubuntu 20.04**| Development environment              |
-| **AWS EC2**    | (or VirtualBox + Vagrant) for hosting the environment |
-| **GitHub**     | For source code management           |
-| **SSH**        | Secure access to remote environments |
+| Tool            | Purpose                              |
+|-----------------|--------------------------------------|
+| **Git**         | Version control system               |
+| **VS Code**     | Code editor for development          |
+| **Ubuntu 20.04**| Development environment (EC2/Local)  |
+| **GitHub**      | For source code management           |
+| **AWS EC2**     | Remote server for Linux environment  |
+| **SSH**         | Secure access to EC2 instance        |
 
 ---
 
-## 📥 Setup Steps
+## 🧪 Setup Steps
 
 ### ✅ Git Installation
+
 ```bash
 sudo apt update
 sudo apt install git -y
 git --version
 
+✅ VS Code Setup
+Installed from: https://code.visualstudio.com
+Extensions used: GitLens, Remote - SSH
 
+✅ Ubuntu/Linux Setup
+Created and connected to an Ubuntu 20.04 environment (AWS EC2)
 
-✅ Visual Studio Code
-Downloaded from: https://code.visualstudio.com
-
-Installed essential extensions:
-
-GitLens
-
-Remote - SSH
-
-✅ Ubuntu/Linux Environment
-Launched Ubuntu 20.04 instance on AWS EC2
-or
-
-Created Ubuntu box using Vagrant + VirtualBox
-
-✅ SSH Access
-Connected to remote Ubuntu machine using:
-
-bash
-Copy
-Edit
-chmod 400 my-key.pem
-ssh -i "my-key.pem" ubuntu@<EC2-IP>
 ✅ GitHub Setup
-Created GitHub account: github.com/piusjohn
+Configured Git locally and created a GitHub account for version control.
 
-Configured Git with:
+✅ AWS Setup
+Created and launched an EC2 instance with Ubuntu 20.04 and connected via SSH.
 
-bash
-Copy
-Edit
-git config --global user.name "Pius John"
-git config --global user.email "your-email@example.com"
-📸 Screenshots (Attached Separately)
-Terminal running Ubuntu environment
+📸 Screenshots
 
-Git version output
+1. Visual Studio Code Installed
+![VS Code](./screenshots/vscode.png)
 
-VS Code connected to the machine
+2. Git Installation Confirmation
+![Git Setup](./screenshots/gitsetup.png)
 
-SSH terminal connection
+3. Ubuntu/Linux Terminal (EC2 or Local)
+![Ubuntu](./screenshots/ubuntu.png)
 
-AWS EC2 instance dashboard
+4. GitHub Profile
+![GitHub](./screenshots/github.png)
 
-GitHub profile and repository
+5. AWS EC2 Console
+![AWS](./screenshots/aws.png)
 
-🧾 Outcome
-✅ All tools installed and configured
 
-✅ Environment ready for DevOps projects
+✅ Outcome
+All required tools are installed and configured.
 
-✅ First milestone completed on Darey.io
+Environment is fully ready for future DevOps projects.
+
+Screenshots have been provided to validate each step.
 
 ✍️ Author
 Pius John
 Corporate Student – Darey.io PBL
 GitHub: @piusjohn
+
+📂 Folder Structure (for clarity)
+devops_3mtt/
+├── README.md
+└── screenshots/
+    ├── vscode.png
+    ├── gitsetup.png
+    ├── ubuntu.png
+    ├── github.png
+    └── aws.png
